@@ -1,0 +1,311 @@
+:root {
+    --dark: #272D38;
+    --light: #FFF;
+    --primary-color: #8EADD5;
+    --primary-color-dark: #3f3f3f;
+    --gray: #F6F6F6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    text-align: center;
+    margin: 0;
+}
+
+.content-wrapper-center {
+    padding: 1rem;
+    max-width: 67.3125rem;
+    margin: auto;
+}
+
+.img_tamanho{
+    width: 50%;
+}
+
+.header-menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    
+}
+
+.header-menu a {
+   
+    padding: 2em 0;
+
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.header {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--primary-color-dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.brands h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #667085;
+}
+
+.brands ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.hide {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.testemunho {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.testemunho2{
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contato {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.contato_image {
+    display: none;
+}
+
+.footer {
+    background-color: var(--gray);
+    padding: 3rem 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.copyright {
+    white-space: nowrap;
+}
+
+.hero,
+.brands,
+.branding,
+.testemunhos,
+.contato {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.brands ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.row > .sm-12{
+    grid-column: 1/-1;
+}
+
+.testemunhos_wrapper{
+    gap: 2rem;
+}
+
+@media screen and (min-width: 46.5em ) {
+    
+
+    .testemunho_thumb{
+        height:8.125rem ;
+        width: 8.125rem;
+    }
+    .contato_image {
+        display: block;
+    }
+
+    .imagem{
+        text-align: center;
+    }
+    .row > .md-2{
+        grid-column: span 2;
+        
+    }
+
+    .row > .md-4{
+        grid-column: span 4;
+    }
+
+    .row > .md-1-6{
+        grid-column: 1/6;
+        grid-row: 1;
+    }
+
+    .row > .md-6-13{
+        grid-column: 6/12;
+        text-align: left;
+    }
+
+    .row > .md-6{
+        grid-column: span 6;
+        text-align: left;
+    }
+
+    .row > .testemunho{
+        
+        display: flex;
+        text-align: left;
+        column-gap:2rem ;
+    }
+
+    .row > .contato_content{
+        grid-column: span 12;
+        
+    }
+
+    .row > .md-10{
+        grid-column: span 10;
+        text-align: left;
+    }
+
+    .margem li{
+        margin-bottom: 1rem;
+    }
+
+    .row > .footer__contato {
+        grid-column: span 12;
+        text-align: left;
+    }
+    
+    .header-menu {
+        list-style-type: none;
+        padding: 0;
+        text-align: right;
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+
+@media screen and (min-width:60rem) {
+    
+    .row > .lg-3{
+        grid-column: span 3;
+    }
+    
+    
+    .row > .lg-4{
+        grid-column: span 4;
+    }
+    
+    .row > .testemunho_content p{
+        overflow: scroll;
+        
+    }
+    
+    .row > .lg-5{
+        grid-column: span 5;
+    }
+    
+    
+    
+    .row > .lg-7{
+        grid-column: span 7;
+        text-align: left;
+    }
+
+    .img_tamanho{
+        width: 100%;
+    }
+
+    .row > .lg-6{
+        grid-column: span 6;
+    }
+
+    .footer__contato{
+        margin-bottom: 6rem;
+    }
+
+    .baixo{
+        margin-top: 6rem;
+    }
+
+    .row > .testemunho{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        column-gap:2rem ;
+        gap: 2rem;
+    }
+
+}
